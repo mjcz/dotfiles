@@ -1,0 +1,4 @@
+.netrwhist
+vim/pack/**
+!vim/pack/minpac/opt/
+

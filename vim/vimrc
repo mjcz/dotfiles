@@ -1,0 +1,69 @@
+" Packages {{{
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('tpope/vim-sensible')
+call minpac#add('ryanoasis/vim-devicons')
+call minpac#add('owickstrom/vim-colors-paramount')
+
+call minpac#add('vim-airline/vim-airline')
+call minpac#add('vim-airline/vim-airline-themes')
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='badcat'
+
+call minpac#add('owickstrom/vim-colors-paramount')
+colorscheme paramount
+set background=dark
+" }}}
+
+" General settings {{{
+filetype plugin indent on
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smartindent
+set splitbelow
+set splitright
+" }}}
+
+
+" Key mapping {{{
+let mapleader = ","
+nnoremap <silent> <Leader>w :set list!<CR>
+nnoremap <silent> <Leader>b :ls<CR>
+nnoremap <silent> <Leader>h :bp<CR>
+nnoremap <silent> <Leader>l :bn<CR>
+nnoremap <silent> <Leader>g :e#<CR>
+nnoremap <silent> <Leader>1 :1b<CR>
+nnoremap <silent> <Leader>2 :2b<CR>
+nnoremap <silent> <Leader>3 :3b<CR>
+nnoremap <silent> <Leader>4 :4b<CR>
+nnoremap <silent> <Leader>5 :5b<CR>
+nnoremap <silent> <Leader>6 :6b<CR>
+nnoremap <silent> <Leader>7 :7b<CR>
+nnoremap <silent> <Leader>8 :8b<CR>
+nnoremap <silent> <Leader>9 :9b<CR>
+nnoremap <silent> <Leader>0 :10b<CR>
+nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
+" }}}
+
+
+" User interface {{{
+syntax enable
+set wildmenu
+set number
+set list
+set history=500
+set virtualedit=onemore
+set whichwrap+=<,>,h,l
+set showcmd
+set showmatch
+set mouse=a
+set showbreak=↪\
+set listchars=tab:→·,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set foldmethod=syntax
+set nofoldenable
+set termguicolors
+" }}}
+

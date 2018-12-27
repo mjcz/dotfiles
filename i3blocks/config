@@ -1,0 +1,39 @@
+# i3blocks config file
+
+color=#c6c6c6
+command=~/.config/i3blocks/blocks/$BLOCK_NAME
+separator_block_width=30
+markup=none
+
+[mediaplayer]
+label= 
+interval=5
+
+[memory]
+label=﬙ 
+interval=30
+
+[iface]
+label= 
+interval=10
+
+[volume-pulseaudio]
+interval=once
+signal=1
+LONG_FORMAT="${SYMB} ${VOL}%"
+SHORT_FORMAT="${SYMB} ${VOL}%"
+AUDIO_HIGH_SYMBOL=墳 
+AUDIO_MED_SYMBOL=奔 
+AUDIO_LOW_SYMBOL=奄 
+AUDIO_MUTED_SYMBOL=婢 
+
+[date]
+label= 
+command=date '+%a, %d %b %Y'
+interval=5
+
+[time]
+label= 
+command=date '+%H:%M:%S'
+interval=5
+
